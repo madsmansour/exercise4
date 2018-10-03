@@ -17,7 +17,7 @@ public class Opgave4_1 {
 
         System.out.println("The area of the pentagon is: " + area);
 
-        for (int i = 1; i <= 10 ; i++) {
+        for (int i = 1; i <= 100 ; i++) {
             System.out.println(i);
 
         }
