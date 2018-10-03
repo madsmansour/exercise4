@@ -7,16 +7,17 @@ public class loop {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your score");
 
+       int score = input.nextInt();
 
-        int score = input.nextInt();
-        if (score <= 80 && score >0){
-            System.out.println("You failed the exam");
-        }
-        else if (score >=80 && score >0 ) {
-            System.out.println("You passed the exam");
-        }
-        else {
-            System.out.println("You entered an invalid number");
+        while (score != -1) {
+            if (score <= 80 && score > -1) {
+                System.out.println("You failed the exam");
+            } else if (score >= 80 && score > -1) {
+                System.out.println("You passed the exam");
+            } else if (score == -1) {
+                System.out.println("You chose to exit... ");
+            }
+            score = input.nextInt();
         }
     }
 }
